@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <form action="api.php" method="POST">
+            <input type="name">
+            <input type="tel">
+            <input type="hidden" name="sub1" value="ssss">
+            <input type="hidden" name="sub2" value="web">
+            <button type="submit">Submit</button>
+        </form>
+        <script src="callbacker.js"></script>
+        <script>
+            initCallbacker({
+                timeout: 3000,
+                texts: {
+                    title: 'Нужна помощь?',
+                    mainText: 'Если вы не смогли найти нужную информацию, оставьте свои контактные данные и оператор свяжется с Вами в ближайшее время',
+                    inputName: 'Ваше имя',
+                    inputPhone: 'Ваш телефон',
+                    button: 'Позвоните мне'
+                },
+            });
+        </script>
+    </body>
+</html>
